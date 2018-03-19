@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DumpManager" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAACgAAAgABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\DumpManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Engine" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAQAAAAAQAAI=</HashCode>
+      <FileName>Core\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SystemManager" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAACACICAACAAAAAAAAAQAAAAAAAAQAAAABAEAA=</HashCode>
+      <FileName>Core\SystemManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeavyHardware" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAA=</HashCode>
+      <FileName>Entities\Hardware\HeavyHardware.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerHardware" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAA=</HashCode>
+      <FileName>Entities\Hardware\PowerHardware.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hardware" Collapsed="true">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIAAAEAIAAAAFBAAAAAAAgAANEKAAAQAAAIAAAEA=</HashCode>
+      <FileName>Entities\Hardware.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpressSoftware" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Software\ExpressSoftware.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightSoftware" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAgAAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Software\LightSoftware.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Software" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAAAAABEAAAAAAQAAAAFAAAAAQAAAAAAAEA=</HashCode>
+      <FileName>Entities\Software.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleReader" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InputOutput\ConsoleReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleWriter" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InputOutput\ConsoleWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
