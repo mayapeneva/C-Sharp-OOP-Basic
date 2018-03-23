@@ -16,7 +16,7 @@ public class Cleric : Character, IHealable
     {
         if (!this.IsAlive || !character.IsAlive)
         {
-            throw new ArgumentException("Must be alive to perform this action!");
+            throw new InvalidOperationException("Must be alive to perform this action!");
         }
 
         if (!this.Faction.Equals(character.Faction))

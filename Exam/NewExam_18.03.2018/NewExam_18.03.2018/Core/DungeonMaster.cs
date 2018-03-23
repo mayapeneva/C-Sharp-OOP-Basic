@@ -9,30 +9,65 @@ public class DungeonMaster
     private Stack<Item> pool;
     private int lastSurvivorRounds;
 
-    private CharacterFactory characterFactory;
-    private ItemFactory itemFactory;
-
-    public DungeonMaster(CharacterFactory characterFactory, ItemFactory itemFactory)
+    public DungeonMaster()
     {
         this.party = new Dictionary<string, Character>();
         this.pool = new Stack<Item>();
-        this.characterFactory = characterFactory;
-        this.itemFactory = itemFactory;
     }
 
     public string JoinParty(string[] args)
     {
-        var characterType = args[1];
-        var name = args[2];
-        this.party.Add(name, this.characterFactory.CreateCharacter(characterType, name, args[0]));
+        Faction faction;
+        var ifParsed = Enum.TryParse(args[0], out faction);
+        if (!ifParsed)
+        {
+            throw new ArgumentException($"Invalid faction \"{args[0]}\"!");
+        }
 
+        var characterType = args[1];
+        if (!characterType.Equals("Warrior") && !characterType.Equals("Cleric"))
+        {
+            throw new ArgumentException($"Invalid character type \"{characterType}\"");
+        }
+
+        var name = args[2];
+        switch (characterType)
+        {
+            case "Warrior":
+                this.party.Add(name, new Warrior(name, faction));
+                break;
+
+            case "Cleric":
+                this.party.Add(name, new Cleric(name, faction));
+                break;
+        }
         return $"{name} joined the party!";
     }
 
     public string AddItemToPool(string[] args)
     {
         var itemName = args[0];
-        this.pool.Push(this.itemFactory.CreateItem(itemName));
+        if (!itemName.Equals("ArmorRepairKit")
+            && !itemName.Equals("HealthPotion")
+            && !itemName.Equals("PoisonPotion"))
+        {
+            throw new ArgumentException($"Invalid item \"{itemName}\"!");
+        }
+
+        switch (itemName)
+        {
+            case "ArmorRepairKit":
+                this.pool.Push(new ArmorRepairKit());
+                break;
+
+            case "HealthPotion":
+                this.pool.Push(new HealthPotion());
+                break;
+
+            case "PoisonPotion":
+                this.pool.Push(new PoisonPotion());
+                break;
+        }
 
         return $"{itemName} added to pool.";
     }

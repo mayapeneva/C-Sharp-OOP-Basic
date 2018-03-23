@@ -15,7 +15,7 @@ public abstract class Item
     {
         if (!character.IsAlive)
         {
-            throw new ArgumentException("Must be alive to perform this action!");
+            throw new InvalidOperationException("Must be alive to perform this action!");
         }
     }
 }

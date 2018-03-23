@@ -15,7 +15,7 @@ public class Warrior : Character, IAttackable
     {
         if (!this.IsAlive || !character.IsAlive)
         {
-            throw new ArgumentException("Must be alive to perform this action!");
+            throw new InvalidOperationException("Must be alive to perform this action!");
         }
 
         if (this.Equals(character))

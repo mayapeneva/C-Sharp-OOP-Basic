@@ -129,7 +129,7 @@ public abstract class Character
     {
         if (!this.IsAlive)
         {
-            throw new ArgumentException("Must be alive to perform this action!");
+            throw new InvalidOperationException("Must be alive to perform this action!");
         }
     }
 

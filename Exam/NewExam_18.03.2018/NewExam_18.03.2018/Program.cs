@@ -9,9 +9,7 @@ namespace DungeonsAndCodeWizards
         // However, you ARE allowed to use your own namespaces (or no namespaces at all if you prefer) in other classes.
         public static void Main(string[] args)
         {
-            var characterFactory = new CharacterFactory();
-            var itemFactory = new ItemFactory();
-            var master = new DungeonMaster(characterFactory, itemFactory);
+            var master = new DungeonMaster();
             var engine = new Engine(master);
             engine.Run();
         }

@@ -45,8 +45,6 @@
     <Compile Include="Core\DungeonMaster.cs" />
     <Compile Include="Core\Engine.cs" />
     <Compile Include="Enums\Faction.cs" />
-    <Compile Include="Factories\CharacterFactory.cs" />
-    <Compile Include="Factories\ItemFactory.cs" />
     <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\IHealable.cs" />
     <Compile Include="Models\Bags\Backpack.cs" />
@@ -64,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Factories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
