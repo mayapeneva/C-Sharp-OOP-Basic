@@ -8,8 +8,8 @@ namespace Mankind_EXER
         {
             try
             {
-                var studentInfo = Console.ReadLine().Split(new []{' '}, StringSplitOptions.RemoveEmptyEntries);
-                var workerInfo = Console.ReadLine().Split(new[]{' '}, StringSplitOptions.RemoveEmptyEntries);
+                var studentInfo = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var workerInfo = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
                 var student = new Student(studentInfo[0], studentInfo[1], studentInfo[2]);
                 var worker = new Worker(workerInfo[0], workerInfo[1], double.Parse(workerInfo[2]), double.Parse(workerInfo[3]));

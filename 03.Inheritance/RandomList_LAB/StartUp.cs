@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
-
-public class StartUp
+﻿public class StartUp
 {
     public static void Main()
     {

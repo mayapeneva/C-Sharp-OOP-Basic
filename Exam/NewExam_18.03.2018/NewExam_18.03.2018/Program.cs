@@ -1,5 +1,4 @@
-﻿using System;
-using DungeonsAndCodeWizards.Core;
+﻿using DungeonsAndCodeWizards.Core;
 
 namespace DungeonsAndCodeWizards
 {

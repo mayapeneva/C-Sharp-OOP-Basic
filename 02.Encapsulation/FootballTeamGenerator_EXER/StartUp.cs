@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace FootballTeamGenerator_EXER
 {
@@ -12,7 +11,7 @@ namespace FootballTeamGenerator_EXER
 
             try
             {
-                var input = Console.ReadLine().Split(new[] {';'}, StringSplitOptions.RemoveEmptyEntries);
+                var input = Console.ReadLine().Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
                 while (input[0] != "END")
                 {
                     var teamName = input[1];
@@ -21,12 +20,15 @@ namespace FootballTeamGenerator_EXER
                         case "Team":
                             teams[teamName] = new Team(teamName);
                             break;
+
                         case "Add":
                             AddPlayerInATeam(teams, input, teamName);
                             break;
+
                         case "Remove":
                             teams[teamName].RemoveAPlayer(input[2]);
                             break;
+
                         case "Rating":
                             GetRatingForTheTeam(teams, teamName);
                             break;

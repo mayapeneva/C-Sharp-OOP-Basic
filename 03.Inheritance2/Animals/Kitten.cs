@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Kitten : Cat
+﻿public class Kitten : Cat
 {
     private const string KittenGender = "Female";
 

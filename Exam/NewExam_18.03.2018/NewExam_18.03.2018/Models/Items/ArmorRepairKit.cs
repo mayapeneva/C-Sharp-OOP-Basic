@@ -1,6 +1,4 @@
-﻿using System.Runtime.Remoting.Metadata.W3cXsd2001;
-
-public class ArmorRepairKit : Item
+﻿public class ArmorRepairKit : Item
 {
     private const string ArmorRepairKitName = "ArmorRepairKit";
     private const int ArmorRepairKitWeight = 10;

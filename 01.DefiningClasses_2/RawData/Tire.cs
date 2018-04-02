@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Tire
+﻿public class Tire
 {
     public Tire(double pressure, int age)
     {

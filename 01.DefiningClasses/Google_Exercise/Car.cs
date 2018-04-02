@@ -7,8 +7,6 @@
 
         public Car()
         {
-            this.carModel = carModel;
-            this.carSpeed = carSpeed;
         }
 
         public Car(string carModel, int carSpeed)

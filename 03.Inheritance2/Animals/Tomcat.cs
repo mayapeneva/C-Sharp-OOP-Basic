@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Tomcat : Cat
+﻿public class Tomcat : Cat
 {
     private const string TomcatGender = "Male";
 

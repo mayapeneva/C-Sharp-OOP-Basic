@@ -35,6 +35,7 @@ namespace Google_Exercise
                             people[name].company.salary = salary;
                         }
                         break;
+
                     case "pokemon":
                         var pokType = line[3];
                         if (people[name].pokemons.All(p => p.PokemonName != paramName))
@@ -46,6 +47,7 @@ namespace Google_Exercise
                             people[name].pokemons.First(p => p.PokemonName == paramName).pokemonType = pokType;
                         }
                         break;
+
                     case "parents":
                         var parBD = line[3];
                         if (people[name].parents.All(p => p.ParentName != paramName))
@@ -57,6 +59,7 @@ namespace Google_Exercise
                             people[name].parents.First(p => p.ParentName == paramName).parentBirthday = parBD;
                         }
                         break;
+
                     case "children":
                         var childBD = line[3];
                         if (people[name].children.All(p => p.ChildName != paramName))
@@ -68,6 +71,7 @@ namespace Google_Exercise
                             people[name].children.First(p => p.ChildName == paramName).childBirthday = childBD;
                         }
                         break;
+
                     case "car":
                         var carSpeed = int.Parse(line[3]);
                         if (people[name].car.CarModel != paramName)

@@ -49,7 +49,7 @@ namespace CarSalesman_Exercise
         {
             for (int j = 0; j < m; j++)
             {
-                var line = Console.ReadLine().Split(new []{' '}, StringSplitOptions.RemoveEmptyEntries);
+                var line = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 var car = new Car(line[0], line[1]);
                 if (line.Length > 2)
                 {

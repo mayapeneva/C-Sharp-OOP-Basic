@@ -14,6 +14,7 @@ namespace Animals_EXER
             this.Age = age;
             this.Gender = gender;
         }
+
         public string Name
         {
             get { return this.name; }

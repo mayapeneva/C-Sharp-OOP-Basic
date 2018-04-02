@@ -2,7 +2,7 @@
 
 namespace MordorsCrueltyPlan_EXER
 {
-    class MoodFactory
+    internal class MoodFactory
     {
         public int FinalMood { get; set; }
 
@@ -17,7 +17,7 @@ namespace MordorsCrueltyPlan_EXER
             {
                 result = $"{mood}{Environment.NewLine}Sad";
             }
-            else if (mood > 0 && mood <=15)
+            else if (mood > 0 && mood <= 15)
             {
                 result = $"{mood}{Environment.NewLine}Happy";
             }

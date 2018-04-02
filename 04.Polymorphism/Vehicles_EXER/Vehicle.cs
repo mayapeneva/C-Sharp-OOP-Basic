@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vehicles_EXER
+﻿namespace Vehicles_EXER
 {
     public abstract class Vehicle
     {

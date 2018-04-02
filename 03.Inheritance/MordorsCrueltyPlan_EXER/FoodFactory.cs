@@ -15,21 +15,27 @@
                 case "cram":
                     mood += 2;
                     break;
+
                 case "lembas":
                     mood += 3;
                     break;
+
                 case "apple":
                     mood += 1;
                     break;
+
                 case "melon":
                     mood += 1;
                     break;
+
                 case "honeycake":
                     mood += 5;
                     break;
+
                 case "mushrooms":
                     mood -= 10;
                     break;
+
                 default:
                     mood -= 1;
                     break;

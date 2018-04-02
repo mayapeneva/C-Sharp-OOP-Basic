@@ -30,9 +30,11 @@ namespace Vehicles_EXER
                         case "Car":
                             ExecuteCommand(car, action, param);
                             break;
+
                         case "Truck":
                             ExecuteCommand(truck, action, param);
                             break;
+
                         case "Bus":
                             ExecuteCommand(bus, action, param);
                             break;
@@ -56,9 +58,11 @@ namespace Vehicles_EXER
                 case "Drive":
                     Console.WriteLine(vehicle.Drive(param));
                     break;
+
                 case "DriveEmpty":
                     Console.WriteLine(vehicle.DriveEmpty(param));
                     break;
+
                 case "Refuel":
                     vehicle.Refuel(param);
                     break;

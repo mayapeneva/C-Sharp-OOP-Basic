@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Animals_EXER
+﻿namespace Animals_EXER
 {
     public class Tomcat : Cat
     {

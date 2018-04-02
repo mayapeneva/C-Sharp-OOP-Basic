@@ -16,10 +16,12 @@ namespace PizzaCalories_EXER
                         case "Pizza":
                             CalculateAndPrintPizzasCallories(input);
                             break;
+
                         case "Dough":
                             var dough = new Dough(input[1], input[2], double.Parse(input[3]));
                             Console.WriteLine($"{dough.GetDoughCalories():f2}");
                             break;
+
                         case "Topping":
                             var topping = new Topping(input[1], double.Parse(input[2]));
                             Console.WriteLine($"{topping.GetToppingCalories():f2}");

@@ -15,7 +15,6 @@ public class Circle : Shape
         private set { radius = value; }
     }
 
-
     public override double CalculatePerimeter()
     {
         return 2 * Math.PI * this.Radius;

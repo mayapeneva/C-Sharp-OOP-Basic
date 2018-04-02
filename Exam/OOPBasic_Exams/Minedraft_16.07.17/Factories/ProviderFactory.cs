@@ -13,6 +13,5 @@ public class ProviderFactory
         }
 
         return new PressureProvider(id, energyOutput);
-
     }
 }

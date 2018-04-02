@@ -8,7 +8,7 @@ namespace PokemonTrainer_Exercise
     {
         public static void Main()
         {
-            var input = Console.ReadLine().Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
+            var input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             var trainers = new Dictionary<string, Trainer>();
             while (input[0] != "Tournament")
             {

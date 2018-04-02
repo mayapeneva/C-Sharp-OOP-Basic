@@ -66,6 +66,5 @@ namespace CompanyRoster_Exercise
                 Console.WriteLine($"{employee.Name} {employee.Salary:f2} {employee.Email} {employee.Age}");
             }
         }
-
     }
 }
